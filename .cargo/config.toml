@@ -1,0 +1,11 @@
+[env]
+# CMAKE_POLICY_VERSION_MINIMUM = "3.5"
+# CC = "/opt/wasi-sdk/bin/clang"
+# CXX = "/opt/wasi-sdk/bin/clang"
+OPENSSL_DIR = "/home/lukas/Documents/openssl/precompiled"
+
+[target.wasm32-wasip2]
+rustflags = [
+    "--cfg", "tokio_unstable",
+    # "-Clink-arg=-L/opt/wasi-sdk/share/wasi-sysroot/lib/wasm32-wasip2",
+]

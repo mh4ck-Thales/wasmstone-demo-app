@@ -1,0 +1,15 @@
+[package]
+name = "classifier"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "=0.8.3"
+axum-extra = { version = "0.10.0", features = ["multipart"] }
+image = { version = "0.25.6", default-features = false, features = ["png"] }
+tract-onnx = "0.21.13"
+tokio = { version = "1.25.2", features = ["full"] }
+clap = { version = "4.5.45", features = ["derive"] }
+
+[patch.crates-io]
+tokio = { path = "./tokio/tokio" }

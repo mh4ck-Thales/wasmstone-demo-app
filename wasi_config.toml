@@ -1,0 +1,3 @@
+[wasi]
+inherit-network = true
+allow-ip-name-lookup = true
